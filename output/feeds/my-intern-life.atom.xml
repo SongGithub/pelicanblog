@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Song's blog</title><link href="www/" rel="alternate"></link><link href="www/feeds/my-intern-life.atom.xml" rel="self"></link><id>www/</id><updated>2014-02-28T16:00:00+11:00</updated><entry><title>The 1st article about intern on my blog</title><link href="www/my-intern1.html" rel="alternate"></link><updated>2014-02-28T16:00:00+11:00</updated><author><name>Song the author</name></author><id>tag:www,2014-02-28:my-intern1.html</id><summary type="html">&lt;p&gt;Gday!&lt;/p&gt;
-&lt;p&gt;I am writting about my 1st entry of in the intern category&lt;/p&gt;
-</summary><category term="pelican"></category><category term="blog"></category></entry><entry><title>The 2nd article about intern on my blog</title><link href="www/my-intern2.html" rel="alternate"></link><updated>2014-02-28T16:00:00+11:00</updated><author><name>Song the author</name></author><id>tag:www,2014-02-28:my-intern2.html</id><summary type="html">&lt;p&gt;Gday!&lt;/p&gt;
-&lt;p&gt;I am writting about my second entry of in the intern category&lt;/p&gt;
-</summary><category term="pelican"></category><category term="blog"></category></entry><entry><title>The 3rd article about intern on my blog</title><link href="www/my-intern3.html" rel="alternate"></link><updated>2014-02-28T16:00:00+11:00</updated><author><name>Song the author</name></author><id>tag:www,2014-02-28:my-intern3.html</id><summary type="html">&lt;p&gt;Gday!&lt;/p&gt;
-&lt;p&gt;I am writting about my 3rd entry of in the intern category&lt;/p&gt;
-</summary><category term="pelican"></category><category term="blog"></category></entry></feed>
