@@ -1,0 +1,675 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Song",
+				"SongGithub"
+			],
+			[
+				"A",
+				"AddItemForm"
+			],
+			[
+				"get",
+				"get_form_kwargs"
+			],
+			[
+				"Ite",
+				"ItemForm"
+			],
+			[
+				"Item_per",
+				"Item_perCategory_ListView"
+			],
+			[
+				"category",
+				"category_here"
+			],
+			[
+				"cate",
+				"category"
+			],
+			[
+				"ca",
+				"category_slug"
+			],
+			[
+				"C",
+				"Category"
+			],
+			[
+				"to",
+				"to_do_list_app"
+			],
+			[
+				"time",
+				"timedelta"
+			],
+			[
+				"p",
+				"polls"
+			],
+			[
+				"ind",
+				"index"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"H",
+				"HttpResponse"
+			],
+			[
+				"poll",
+				"poll_id"
+			],
+			[
+				"act",
+				"add_action"
+			],
+			[
+				"choice",
+				"Choice"
+			],
+			[
+				"fiel",
+				"fields"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "pelicanconf.py",
+			"settings":
+			{
+				"buffer_size": 832,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "publishconf.py",
+			"settings":
+			{
+				"buffer_size": 508,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/artical1.rst",
+			"settings":
+			{
+				"buffer_size": 310,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/2014/artical2.rst",
+			"settings":
+			{
+				"buffer_size": 278,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "output/category/technical-blogging.html",
+			"settings":
+			{
+				"buffer_size": 3101,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/pages/about.rst",
+			"settings":
+			{
+				"buffer_size": 51,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/2014 intern/intern3.rst",
+			"settings":
+			{
+				"buffer_size": 275,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/pages/mdfile.md",
+			"settings":
+			{
+				"buffer_size": 212,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/2014 intern/artical1.rst",
+			"settings":
+			{
+				"buffer_size": 275,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 180.0,
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"conv",
+				"Indentation: Convert to Spaces"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/songvm520/Workspaces/pelicanblog/content/artical1.rst",
+		"/home/songvm520/Workspaces/pelicanblog/fabfile.py",
+		"/home/songvm520/Workspaces/pelicanblog/output/archives.html",
+		"/home/songvm520/Workspaces/pelicanblog/content/pages/about.md",
+		"/home/songvm520/Workspaces/2DoList/to_do_list_app/forms.py",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/wsgi.py",
+		"/home/songvm520/Workspaces/2DoList/to_do_list_app/urls.py",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/urls.py",
+		"/home/songvm520/Workspaces/SongGithub.github.com/_config.yml",
+		"/home/songvm520/Workspaces/2DoList/templates/to_do_list_app/ManageItem.html",
+		"/home/songvm520/Workspaces/2DoList/templates/to_do_list_app/base.html",
+		"/home/songvm520/Workspaces/2DoList/templates/to_do_list_app/INDEX_ViewCategories.html",
+		"/home/songvm520/Workspaces/2DoList/templates/to_do_list_app/AddItem.html",
+		"/home/songvm520/Workspaces/2DoList/templates/to_do_list_app/ItemViewforCategory.html",
+		"/home/songvm520/Workspaces/2DoList_local/to_do_list_app/views.py",
+		"/home/songvm520/Workspaces/SongGithub.github.com/jekyll-bootstrap/_config.yml",
+		"/home/songvm520/Workspaces/SongGithub.github.com/.git/config",
+		"/home/songvm520/Workspaces/2DoList/to_do_list_app/views.py",
+		"/home/songvm520/Workspaces/2DoList_local/templates/to_do_list_app/AddItem.html",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/settings.py",
+		"/home/songvm520/Workspaces/2DoList_local/templates/to_do_list_app/Add_Category.html",
+		"/home/songvm520/Workspaces/2DoList_local/templates/to_do_list_app/ItemViewforCategory.html",
+		"/home/songvm520/Workspaces/2DoList_local/templates/to_do_list_app/ManageCategory.html",
+		"/home/songvm520/Workspaces/2DoList_local/templates/to_do_list_app/ManageItem.html",
+		"/home/songvm520/Workspaces/2DoList_local/Proj_2DoList/settings.py",
+		"/home/songvm520/Workspaces/2DoList_local/to_do_list_app/urls.py",
+		"/home/songvm520/Workspaces/2DoList_local/templates/to_do_list_app/base.html",
+		"/home/songvm520/Workspaces/2DoList_local/to_do_list_app/forms.py",
+		"/home/songvm520/Workspaces/2DoList_local/to_do_list_app/models.py",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/to_do_list_app/views.py",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/Proj_2DoList/urls.py",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/to_do_list_app/urls.py",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/to_do_list_app/forms.py",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/to_do_list_app/models.py",
+		"/home/songvm520/Workspaces/magrudys-matjaro/docs/manual/make.bat",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/to_do_list_app/admin.py",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/templates/to_do_list_app/Add_Category.html",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/templates/to_do_list_app/INDEX_ViewCategories.html",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/templates/to_do_list_app/ManageItem.html",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/templates/to_do_list_app/ItemViewforCategory.html",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/to_do_list_app/migrations/0007_auto__chg_field_item_category__chg_field_item_Create_date__chg_field_i.py",
+		"/home/songvm520/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/templates/to_do_list_app/AddItem.html",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/templates/to_do_list_app/base.html",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/templates/to_do_list_app/Unity.html",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/templates/to_do_list_app/ManageCategory.html",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/templates/to_do_list_app/item_confirm_delete.html",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/templates/to_do_list_app/index.html",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/Proj_2DoList/settings.py",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/templates/to_do_list_app/EditItem.html",
+		"/home/songvm520/Workspaces/djangotut1/mysite/polls/urls.py",
+		"/home/songvm520/Workspaces/djangotut1/mysite/polls/models.py",
+		"/home/songvm520/Workspaces/djangotut1/mysite/polls/views.py",
+		"/home/songvm520/Workspaces/djangotut1/mysite/templates/polls/detail.html",
+		"/home/songvm520/Workspaces/djangotut1/mysite/templates/polls/index.html",
+		"/home/songvm520/Workspaces/djangotut1/mysite/polls/urls.pyc",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/templates/to_do_list_app/EditCategory.html",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/templates/to_do_list_app/CreateCategory.html",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/db.sqlite3",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/to_do_list_app/tests.py",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/to_do_list_app/migrations/__init__.py",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/templates/to_do_list_app/ItemDisplayforCategory",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/templates/to_do_list_app/CreateItem.html",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/templates/to_do_list_app/ItemDisplayforAll.html",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/to_do_list_app/migrations/0001_initial.py",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/templates/admin/base_site.html",
+		"/home/songvm520/Workspaces/2DoList/README.md",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/to_do_list_app/admin/index.html",
+		"/home/songvm520/Workspaces/djangotut1/mysite/mysite1/settings.pyc",
+		"/home/songvm520/Workspaces/djangotut1/mysite/mysite1/settings.py",
+		"/home/songvm520/Workspaces/djangotut1/mysite/manage.py",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/manage.py",
+		"/home/songvm520/Workspaces/djtest/.git/COMMIT_EDITMSG",
+		"/home/songvm520/Workspaces/djangotut1/mysite/polls/tests.py",
+		"/home/songvm520/Workspaces/djangotut1/mysite/templates/polls/results.html",
+		"/home/songvm520/Workspaces/djangotut1/mysite/polls/static/polls/style.css",
+		"/home/songvm520/Workspaces/djangotut1/mysite/polls/admin.py",
+		"/home/songvm520/Workspaces/djangotut1/.git/config",
+		"/home/songvm520/Workspaces/djangotut1/mysite/polls/static/polls/images/background.gif",
+		"/home/songvm520/Workspaces/djangotut1/mysite/polls/static/polls/images/facebook.gif",
+		"/home/songvm520/Workspaces/djangotut1/mysite/test.py",
+		"/home/songvm520/Workspaces/djangotut1/mysite/mysite1/urls.py",
+		"/home/songvm520/Workspaces/djangotut1/mysite/templates/detail.html",
+		"/home/songvm520/Workspaces/djangotut1/mysite/polls/index.html",
+		"/home/songvm520/Workspaces/djangotut1/mysite/polls/templates/index.html",
+		"/home/songvm520/Workspaces/djangotut1/mysite/templates/admin/base_site.html",
+		"/home/songvm520/Workspaces/djangotut1/mysite/polls/templates/template",
+		"/home/songvm520/Workspaces/djangotut1/mysite/urls.py",
+		"/usr/local/lib/python2.7/dist-packages/django/template/base.py",
+		"/home/songvm520/Workspaces/djangotut1/build/django/django/contrib/admin/templates/admin/base_site.html",
+		"/usr/local/lib/python2.7/dist-packages/django/template/loader.py",
+		"/home/songvm520/Workspaces/django-tut1-no-oscar/mysite1/polls/models.py",
+		"/home/songvm520/.config/sublime-text-2/Packages/User/Python.sublime-settings",
+		"/home/songvm520/Workspaces/django-tut1/mysite/manage.py",
+		"/home/songvm520/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/songvm520/Workspaces/django-oscar/sites/sandbox/settings_mysql.py",
+		"/home/songvm520/Workspaces/django-oscar/sites/sandbox/settings_sphinx.py",
+		"/home/songvm520/Workspaces/django-oscar/sites/sandbox/public/static/oscar/css/351d541bab18.css",
+		"/home/songvm520/Workspaces/django-oscar/sites/sandbox/urls.py",
+		"/home/songvm520/Workspaces/django-oscar/sites/sandbox/settings.py",
+		"/home/songvm520/Workspaces/django-oscar/sites/sandbox/manage.py",
+		"/home/songvm520/Workspaces/django-oscar/sites/sandbox/update_latest.sh"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"type",
+			"add",
+			"done",
+			"have",
+			"ruler",
+			"=",
+			"r",
+			"itemview",
+			"ItemForm",
+			"mark",
+			"\\w+",
+			"nange",
+			"item.",
+			"td",
+			"template",
+			"list",
+			"CreateCategory",
+			"')),\n",
+			"admin",
+			"origin",
+			"timezone",
+			".choices",
+			"tab",
+			"title",
+			"django",
+			"inlines"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" = ",
+			"CategoryForm",
+			"[\\w-]+",
+			"",
+			"th"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "pelicanconf.py",
+					"settings":
+					{
+						"buffer_size": 832,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								585,
+								585
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "publishconf.py",
+					"settings":
+					{
+						"buffer_size": 508,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								508,
+								508
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "content/artical1.rst",
+					"settings":
+					{
+						"buffer_size": 310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								310,
+								310
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "content/2014/artical2.rst",
+					"settings":
+					{
+						"buffer_size": 278,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								224,
+								224
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "output/category/technical-blogging.html",
+					"settings":
+					{
+						"buffer_size": 3101,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								327,
+								327
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "content/pages/about.rst",
+					"settings":
+					{
+						"buffer_size": 51,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								51,
+								51
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "content/2014 intern/intern3.rst",
+					"settings":
+					{
+						"buffer_size": 275,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								215,
+								215
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "content/pages/mdfile.md",
+					"settings":
+					{
+						"buffer_size": 212,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								212,
+								212
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "content/2014 intern/artical1.rst",
+					"settings":
+					{
+						"buffer_size": 275,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								207,
+								207
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.448148148148,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/songvm520/Workspaces/2DoList/2DoList.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 220.0,
+	"status_bar_visible": true
+}
