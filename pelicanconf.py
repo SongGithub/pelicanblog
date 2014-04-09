@@ -6,9 +6,13 @@ import os
 AUTHOR = u'Song Jin the local machine'
 SITENAME = u"Song's blog- on Local machine"
 
-SITEURL = ''
+SITEURL = os.path.dirname(os.path.dirname(__file__))
 
 THEME = "bootstrap"
+
+# THEME_STATIC_DIR ('theme')
+# os.path.join(SITEURL, 'templates'),
+RELATIVE_URLS = True
 
 TIMEZONE = 'Australia/Melbourne'
 
@@ -52,3 +56,4 @@ TAG_SAVE_AS = "tag/{slug}/index.html"
 # Generate yearly archive
 
 YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
+

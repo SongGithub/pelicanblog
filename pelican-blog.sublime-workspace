@@ -84,10 +84,74 @@
 	"buffers":
 	[
 		{
+			"file": "content/2014 intern/arti5.rst",
+			"settings":
+			{
+				"buffer_size": 1865,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/Projects/3_Ellingtonia.rst",
+			"settings":
+			{
+				"buffer_size": 1458,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/2014 intern/arti7_Building a web-service.rst",
+			"settings":
+			{
+				"buffer_size": 762,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/2014 intern/arti4.rst",
+			"settings":
+			{
+				"buffer_size": 1301,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/2014 intern/arti6_frontend_work_todolist.rst",
+			"settings":
+			{
+				"buffer_size": 1098,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/Projects/4_Djangology",
+			"settings":
+			{
+				"buffer_size": 151,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "pelicanconf.py",
 			"settings":
 			{
-				"buffer_size": 832,
+				"buffer_size": 1361,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "output/index.html",
+			"settings":
+			{
+				"buffer_size": 10455,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "publishing/index.html",
+			"settings":
+			{
+				"buffer_size": 14235,
 				"line_ending": "Unix"
 			}
 		},
@@ -95,63 +159,7 @@
 			"file": "publishconf.py",
 			"settings":
 			{
-				"buffer_size": 508,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "content/artical1.rst",
-			"settings":
-			{
-				"buffer_size": 310,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "content/2014/artical2.rst",
-			"settings":
-			{
-				"buffer_size": 278,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "output/category/technical-blogging.html",
-			"settings":
-			{
-				"buffer_size": 3101,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "content/pages/about.rst",
-			"settings":
-			{
-				"buffer_size": 51,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "content/2014 intern/intern3.rst",
-			"settings":
-			{
-				"buffer_size": 275,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "content/pages/mdfile.md",
-			"settings":
-			{
-				"buffer_size": 212,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "content/2014 intern/artical1.rst",
-			"settings":
-			{
-				"buffer_size": 275,
+				"buffer_size": 1306,
 				"line_ending": "Unix"
 			}
 		}
@@ -188,10 +196,52 @@
 	},
 	"file_history":
 	[
-		"/home/songvm520/Workspaces/pelicanblog/content/artical1.rst",
-		"/home/songvm520/Workspaces/pelicanblog/fabfile.py",
-		"/home/songvm520/Workspaces/pelicanblog/output/archives.html",
+		"/home/songvm520/Workspaces/pelicanblog/output/index.html",
+		"/home/songvm520/Workspaces/pelicanblog/content/2014 intern/arti6_frontend_work_todolist.rst",
+		"/home/songvm520/Workspaces/pelicanblog/content/2014 intern/arti6_ellingtonia.rst",
+		"/home/songvm520/Workspaces/pelicanblog/content/Projects/2_Chinese-translation-OscarDjango.rst",
+		"/home/songvm520/Workspaces/pelicanblog/content/2014 intern/arti4.rst",
+		"/home/songvm520/Workspaces/pelicanblog/content/pages/mdfile.md",
+		"/home/songvm520/Workspaces/pelicanblog/content/2014 intern/arti3.rst",
+		"/home/songvm520/Workspaces/pelicanblog/content/2014 intern/arti1.rst",
+		"/home/songvm520/Workspaces/pelicanblog/content/2014 intern/arti5.rst",
+		"/home/songvm520/Workspaces/pelicanblog/content/Projects/Chinese-translation-OscarDjango.rst",
+		"/home/songvm520/Workspaces/pelicanblog/content/Projects/Todolist.rst",
+		"/home/songvm520/Workspaces/pelican-themes/bootstrap/templates/base.html",
 		"/home/songvm520/Workspaces/pelicanblog/content/pages/about.md",
+		"/home/songvm520/Workspaces/pelican-themes/bootstrap/templates/analytics.html",
+		"/home/songvm520/Workspaces/pelican-themes/bootstrap/templates/disqus.html",
+		"/home/songvm520/Workspaces/pelicanblog/pelicanconf.py",
+		"/home/songvm520/Workspaces/pelican-themes/bootstrap/templates/tags.html",
+		"/home/songvm520/Workspaces/pelicanblog/output/categories.html",
+		"/home/songvm520/Workspaces/pelicanblog/content/2014 intern/artical2.rst",
+		"/home/songvm520/Workspaces/pelicanblog/content/2014 intern/artical1.rst",
+		"/home/songvm520/Workspaces/pelicanblog/output/tags.html",
+		"/home/songvm520/Workspaces/pelican-themes/bootstrap/templates/tag.html",
+		"/home/songvm520/Workspaces/pelicanblog/output/tag/blog/index.html",
+		"/home/songvm520/Workspaces/pelican-themes/bootstrap/static/bootstrap.min.css",
+		"/home/songvm520/Workspaces/pelicanblog/output/tag/pelican/index.html",
+		"/home/songvm520/Workspaces/pelican-themes/bootstrap/static/html5.js",
+		"/home/songvm520/Workspaces/pelicanblog/content/Projects/ProjTodolist.rst",
+		"/home/songvm520/Workspaces/pelicanblog/content/technical/techtree.rst",
+		"/home/songvm520/Workspaces/pelicanblog/content/output/categories.html",
+		"/home/songvm520/Workspaces/pelicanblog/content/artical2.rst~",
+		"/home/songvm520/Workspaces/pelicanblog/output/pages/my-super-post.html",
+		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/settings.py",
+		"/home/songvm520/Workspaces/pelicanblog/content/artical2.rst",
+		"/home/songvm520/Workspaces/pelicanblog/content/artical1.rst",
+		"/home/songvm520/Workspaces/pelicanblog/output/category/technical-blogging.html",
+		"/home/songvm520/Workspaces/pelicanblog/content/2014 intern/intern3.rst",
+		"/home/songvm520/Workspaces/pelicanblog/content/output/pages/about-me.html",
+		"/home/songvm520/Workspaces/pelicanblog/content/pages/artical2.rst",
+		"/home/songvm520/Workspaces/2DoList/manage.py",
+		"/home/songvm520/Workspaces/pelicanblog/.git/hooks/post-update.sample",
+		"/home/songvm520/Workspaces/pelicanblog/fabfile.py",
+		"/home/songvm520/Workspaces/pelicanblog/develop_server.sh",
+		"/home/songvm520/Workspaces/pelicanblog/content/2014/artical2.rst",
+		"/home/songvm520/Workspaces/pelicanblog/output/theme/css/main.css",
+		"/home/songvm520/Workspaces/pelicanblog/content/pages/about.rst",
+		"/home/songvm520/Workspaces/pelicanblog/output/archives.html",
 		"/home/songvm520/Workspaces/2DoList/to_do_list_app/forms.py",
 		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/wsgi.py",
 		"/home/songvm520/Workspaces/2DoList/to_do_list_app/urls.py",
@@ -207,7 +257,6 @@
 		"/home/songvm520/Workspaces/SongGithub.github.com/.git/config",
 		"/home/songvm520/Workspaces/2DoList/to_do_list_app/views.py",
 		"/home/songvm520/Workspaces/2DoList_local/templates/to_do_list_app/AddItem.html",
-		"/home/songvm520/Workspaces/2DoList/Proj_2DoList/settings.py",
 		"/home/songvm520/Workspaces/2DoList_local/templates/to_do_list_app/Add_Category.html",
 		"/home/songvm520/Workspaces/2DoList_local/templates/to_do_list_app/ItemViewforCategory.html",
 		"/home/songvm520/Workspaces/2DoList_local/templates/to_do_list_app/ManageCategory.html",
@@ -274,22 +323,7 @@
 		"/home/songvm520/Workspaces/djangotut1/mysite/polls/index.html",
 		"/home/songvm520/Workspaces/djangotut1/mysite/polls/templates/index.html",
 		"/home/songvm520/Workspaces/djangotut1/mysite/templates/admin/base_site.html",
-		"/home/songvm520/Workspaces/djangotut1/mysite/polls/templates/template",
-		"/home/songvm520/Workspaces/djangotut1/mysite/urls.py",
-		"/usr/local/lib/python2.7/dist-packages/django/template/base.py",
-		"/home/songvm520/Workspaces/djangotut1/build/django/django/contrib/admin/templates/admin/base_site.html",
-		"/usr/local/lib/python2.7/dist-packages/django/template/loader.py",
-		"/home/songvm520/Workspaces/django-tut1-no-oscar/mysite1/polls/models.py",
-		"/home/songvm520/.config/sublime-text-2/Packages/User/Python.sublime-settings",
-		"/home/songvm520/Workspaces/django-tut1/mysite/manage.py",
-		"/home/songvm520/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
-		"/home/songvm520/Workspaces/django-oscar/sites/sandbox/settings_mysql.py",
-		"/home/songvm520/Workspaces/django-oscar/sites/sandbox/settings_sphinx.py",
-		"/home/songvm520/Workspaces/django-oscar/sites/sandbox/public/static/oscar/css/351d541bab18.css",
-		"/home/songvm520/Workspaces/django-oscar/sites/sandbox/urls.py",
-		"/home/songvm520/Workspaces/django-oscar/sites/sandbox/settings.py",
-		"/home/songvm520/Workspaces/django-oscar/sites/sandbox/manage.py",
-		"/home/songvm520/Workspaces/django-oscar/sites/sandbox/update_latest.sh"
+		"/home/songvm520/Workspaces/djangotut1/mysite/polls/templates/template"
 	],
 	"find":
 	{
@@ -300,6 +334,13 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"/home/songvm520/Workspaces/pelicanblog",
+			"/home/songvm520/Workspaces/pelicanblog/content",
+			"/home/songvm520/Workspaces/pelicanblog",
+			"/home/songvm520/Workspaces/pelicanblog/output",
+			"/home/songvm520/Workspaces/pelicanblog",
+			"/home/songvm520/Workspaces/pelicanblog/content",
+			"/home/songvm520/Workspaces/pelicanblog"
 		]
 	},
 	"find_state":
@@ -307,6 +348,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"base.html",
+			"tag-2",
+			"base",
+			"GOOGLE",
+			"google",
+			"Top",
+			"Name",
+			"topboar",
+			"-",
+			"songgithub",
+			"contact",
+			"super title",
+			"DATE_FORMATS",
+			"settings.py",
 			"type",
 			"add",
 			"done",
@@ -340,6 +395,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"=",
 			" = ",
 			"CategoryForm",
 			"[\\w-]+",
@@ -355,75 +411,23 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "pelicanconf.py",
+					"file": "content/2014 intern/arti5.rst",
 					"settings":
 					{
-						"buffer_size": 832,
+						"buffer_size": 1865,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								585,
-								585
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "publishconf.py",
-					"settings":
-					{
-						"buffer_size": 508,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								508,
-								508
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "content/artical1.rst",
-					"settings":
-					{
-						"buffer_size": 310,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								310,
-								310
+								141,
+								141
 							]
 						],
 						"settings":
@@ -437,19 +441,72 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "content/2014/artical2.rst",
+					"buffer": 1,
+					"file": "content/Projects/3_Ellingtonia.rst",
 					"settings":
 					{
-						"buffer_size": 278,
+						"buffer_size": 1458,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								224,
-								224
+								1434,
+								1434
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "content/2014 intern/arti7_Building a web-service.rst",
+					"settings":
+					{
+						"buffer_size": 762,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								478,
+								478
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "content/2014 intern/arti4.rst",
+					"settings":
+					{
+						"buffer_size": 1301,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -464,72 +521,18 @@
 				},
 				{
 					"buffer": 4,
-					"file": "output/category/technical-blogging.html",
+					"file": "content/2014 intern/arti6_frontend_work_todolist.rst",
 					"settings":
 					{
-						"buffer_size": 3101,
+						"buffer_size": 1098,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								327,
-								327
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "content/pages/about.rst",
-					"settings":
-					{
-						"buffer_size": 51,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								51,
-								51
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "content/2014 intern/intern3.rst",
-					"settings":
-					{
-						"buffer_size": 275,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								215,
-								215
+								1098,
+								1098
 							]
 						],
 						"settings":
@@ -543,24 +546,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "content/pages/mdfile.md",
+					"buffer": 5,
+					"file": "content/Projects/4_Djangology",
 					"settings":
 					{
-						"buffer_size": 212,
+						"buffer_size": 151,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								212,
-								212
+								151,
+								151
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -571,28 +574,106 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
-					"buffer": 8,
-					"file": "content/2014 intern/artical1.rst",
+					"buffer": 6,
+					"file": "pelicanconf.py",
 					"settings":
 					{
-						"buffer_size": 275,
+						"buffer_size": 1361,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								207,
-								207
+								306,
+								306
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/RestructuredText/reStructuredText.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 20.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "output/index.html",
+					"settings":
+					{
+						"buffer_size": 10455,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								604,
+								604
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 249.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "publishing/index.html",
+					"settings":
+					{
+						"buffer_size": 14235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1531,
+								1531
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 153.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "publishconf.py",
+					"settings":
+					{
+						"buffer_size": 1306,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								234,
+								234
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -641,6 +722,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 132.0
+	},
 	"replace":
 	{
 		"height": 64.0
@@ -661,7 +746,7 @@
 		[
 			[
 				"",
-				"/home/songvm520/Workspaces/2DoList/2DoList.sublime-project"
+				"/home/songvm520/Workspaces/djangology/djangology.sublime-project"
 			]
 		],
 		"width": 380.0

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "Shortcut Icon" href = "http://en.gravatar.com/userimage/61337704/4d6e7ee901c2c1d08fa676965186884a.jpg"/>
+	<meta charset="utf-8">
+	<title>{% block windowtitle %}{{ SITENAME }}{% endblock %}</title>
+	<meta name="description" content="">
+	<meta name="author" content="{{ AUTHOR }}">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+		<script src="{{ SITEURL }}/theme/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link href="{{ SITEURL }}/theme/bootstrap.min.css" rel="stylesheet">
+	<link href="{{ SITEURL }}/theme/local.css" rel="stylesheet">
+	<link href="{{ SITEURL }}/theme/pygments.css" rel="stylesheet">
+
+    <!-- Feeds -->
+    {% if FEED_ALL_ATOM %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+    {% endif %}
+    {% if FEED_ALL_RSS %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+    {% endif %}
+
+	{% include "analytics.html" %}
+	{% include "disqus.html" %}
+	<style type="text/css">
+
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+      .tag-1 {
+        font-size: 13pt;
+      }
+      .tag-2 {
+        font-size: 10pt;
+      }
+      .tag-3 {
+        font-size: 8pt;
+      }
+
+    </style>
+</head>
+<body>
+	{% include "facebook.html" %}
+	{% include "github.html" %}
+	<div class="topbar">
+	  <div class="topbar-inner">
+		<div class="container-fluid">
+		  <a class="brand" href="{{ SITEURL }}/">{{ SITENAME }}</a>
+			<ul class="nav">
+				{% for title, link in MENUITEMS %}
+					<li><a href="{{ link }}">{{ title }}</a></li>
+				{% endfor %}
+				{% if DISPLAY_PAGES_ON_MENU %}
+					{% for page in PAGES %}
+						<li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+					{% endfor %}
+				{% endif %}
+				{% for cat, null in categories %}
+					<li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+				{% endfor %}
+			</ul>
+			<p class="pull-right"><a href="{{ SITEURL }}/archives.html">[archives]</a> <a href="{{ SITEURL }}/tags.html">[tags]</a></p>
+		</div>
+	  </div>
+	</div>
+
+	<div class="container-fluid">
+	  <div class="sidebar">
+		<div class="well">
+			<h3>Project Links</h3>
+			<ul>
+				{% for name, link in LINKS %}
+				<li><a href="{{ link }}">{{ name }}</a></li>
+				{% endfor %}
+			</ul>
+			<div class="social">
+			<h3>Social</h3>
+			<ul>
+				{% for name, link in SOCIAL %}
+				<li><a href="{{ link }}">{{ name }}</a></li>
+				{% endfor %}
+			</ul>
+			</div>
+						<div class="tags">
+			<h3>Tags</h3>
+			<ul>
+    			{% for tag in tag_cloud %}
+        			<li class="tag-{{ tag.1 }}"><a href="{{ SITEURL }}/tag/{{ tag.0 }}/">{{ tag.0 }}</a></li>
+    			{% endfor %}
+			</ul>
+			</div>
+		</div>
+	  </div>
+	  <div class="content">
+			{% block indextitle %}<div class="page-header"><h1>{% block title %} {{ self.windowtitle() }} {% endblock %}</h1></div>{% endblock %}
+			{% block content %}{% endblock %}
+		<footer>
+		  <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme based on <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>.</p>
+		  <p>&copy; {{ AUTHOR }}</p>
+		</footer>
+	  </div>
+
+	</div>
+</body>
+</html>

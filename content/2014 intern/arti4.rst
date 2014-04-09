@@ -8,7 +8,7 @@
 
 My observation today is the deeper I dig, the more I can explore
 ================================================================
-For the pelican blog, I have been strictly following pelican site's instuctions, especially the way I serve the website. However, the method named 'simpleHTTP' has strange habbit that delay my changes on website randomly. It seems to have its own mind which rander itself very unreliable.
+For the pelican blog, I have been strictly following pelican site's instuctions, especially the way I serve the website. However, the method named 'simpleHTTP' has strange habbit that randomly delaying my changes on website. It seems to have its own mind which rander itself very unreliable. I've got fed up by this, so I need a solution for this problem.
 
 Gold Digged out today
 ---------------------
