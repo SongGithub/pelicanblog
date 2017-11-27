@@ -8,7 +8,7 @@
 
 Roy. Fileding
 =============
-When trying gain understanding of REST framework, there is a key person I can't avoid. He is Roy who invented the RESTful framework in his thesis. The thesis then stood out from majority doctoral papers that were less influential to human IT infrastructure. I am very interested in how did he come up with such a invovative idea.
+When trying gain understanding of REST framework, there is a key person I can't avoid. He is Roy who invented the RESTful framework in his dissertation. The thesis then stood out from majority doctoral papers that were less influential to human IT infrastructure. I am very interested in how did he come up with such a invovative idea.
 
 Addy Osmani
 ===========

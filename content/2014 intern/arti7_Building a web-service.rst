@@ -1,6 +1,6 @@
 :title: To build a web service
 :date: 2014-04-03 16:00
-:tags: Backbone.js RESTful framework
+:tags: Backbone.js, RESTful API
 :category: Projects
 :slug: web_service
 :author: Song the author
