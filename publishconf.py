@@ -4,18 +4,18 @@ from __future__ import unicode_literals
 import os
 
 AUTHOR = u'Song Jin'
-SITENAME = u"Song's blog on the Github"
+SITENAME = u"Song's blog on the Github 2017"
 
-SITEURL = 'http://songgithub.github.io/pelicanblog/'
+SITEURL = 'https://songgithub.github.io'
 
-THEME = "bootstrap"
+THEME = "themes/bootstrap"
 
 TIMEZONE = 'Australia/Melbourne'
 
 DEFAULT_LANG = u'en'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None 
+FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
@@ -27,7 +27,7 @@ LINKS =  (
 # Social widget
 SOCIAL = (
           ('Github','https://github.com/SongGithub'),
-          ('Linkedin', 'http://au.linkedin.com/in/songjin123'),
+          ('Linkedin', 'https://au.linkedin.com/in/songjinau'),
 #           ('Anothergoo social link', '#'),
          )
 

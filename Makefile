@@ -105,4 +105,10 @@ github: publish
 	ghp-import $(OUTPUTDIR)
 	git push origin gh-pages
 
+my-github: publish
+	# switch git context to songgithub.github.io
+
+	# push
+	git push origin master
+
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github

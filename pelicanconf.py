@@ -8,10 +8,10 @@ SITENAME = u"Song's blog- on Local machine"
 
 SITEURL = os.path.dirname(os.path.dirname(__file__))
 
-THEME = "bootstrap"
+THEME = "themes/bootstrap"
 
-# THEME_STATIC_DIR ('theme')
-# os.path.join(SITEURL, 'templates'),
+THEME_STATIC_DIR = ('themes')
+os.path.join(SITEURL, 'templates'),
 RELATIVE_URLS = True
 
 TIMEZONE = 'Australia/Melbourne'
@@ -19,19 +19,19 @@ TIMEZONE = 'Australia/Melbourne'
 DEFAULT_LANG = u'en'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None 
+FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # 'project links'
 LINKS =  (
-          ('Songs to do list','http://songs-todolist.herokuapp.com'),      
+          ('Songs to do list','http://songs-todolist.herokuapp.com'),
          )
 
 # Social widget
 SOCIAL = (
             ('Github','https://github.com/SongGithub'),
-            ('Linkedin', 'http://au.linkedin.com/in/songjin123'),         
+            ('Linkedin', 'http://au.linkedin.com/in/songjin123'),
          )
 
 TAG_CLOUD_STEPS = 3
