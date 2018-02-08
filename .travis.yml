@@ -1,10 +1,32 @@
-script:
-  - make
-after_success:
-  - .travis/compile.sh
-
-
+language: python
 env:
   global:
-    secure: RiW7Y7/UU/cjmpebWAkJnT6/sIRAlQVcpos2c98ysKi73IoKmzll4SB2u+wDPo6rYPcYVuFmVHuqHa9tt6iBkE2VNO1OSXK1B18d54/0PwREPbR2hzUTV4D8L14+vKBDe4mO06RX3C1ou6bKhZ/xsYfvwb6ZZ7ThoHHdO65SlopHyTa1Jj9lytKh3MFDsiv2NqqMumj679LWBYACviK6hQ7rSBs7hrXHNTij84XCxEZrkmEsJ2Q6QRKVjy/eaRWmaO79ID2gRUiomfF+oFXULmFdYXyDewceZtG5NgsrqNbbaMq8Gt/Jv2U+F53QNMu1DOP6k34aJGQFhIW5gEdJ6Knd7qWsC0AKx+OHSdLZGYOg854TS0TcwrAc0wOAs8e/Pf/HToOurc5yOxKuV3DbxK9maWc1PGJTQ/PraCLlTpccFb9HAEAy+JUAkYXw3FwOUNq3x5QVSHcsweXW2cnF2y3y1ZZWLs22O4ktw8mNzEVvWU+bKwSCFBPLjbhHB0/Clt44FyBegXfY/Strlyw14Jc5YXD0/fDmsajXqt3mKL9cQA22V9u2ZcGf00F5BV9rubVVNeE9mky5sBGYOPJGdrkpcHZ4eDYlBPm521NZ5cy9MRXwhPuLnjNA2Q4q//MpKJZdrK0YWpXOe2W+4aZ5rji2dj+af8MCCnP4tmHMyps=
-
+  - USER="Travis on behalf of songGithub"
+  - EMAIL="songjin@hotmail.com"
+  - REPO="songgithub.github.io"
+  - FILES="output/*"
+  - GH_REPO="github.com/SongGithub/songgithub.github.io.git"
+  - secure: CpEYdCX126DubLz9Tv4gLNGMYoQt9Ze1fCmWvBYzqf+sF8gcL4Snf392rfH5VfV1EFjY445PbaAzSVAYV/DnXUjDiNoQJ5MwtcvMu+5B0CQIn11bK0vgnNeLVE+KQqMLBQG/8mPsEHYOyBZk/ZcO6iujaQ60CPPi6seRZXxuNZ6ufGmsknLhwW9+KHX71Q4aCUktywUpeS6Oiwt9QhunS3UWDqVOQFHvgHDiffhbg0Zx3tZ3gztwc7A61pi7Tu0WvjTOVGHVv87txypw85LQSXE/jlTwGP/bKKdRkWFXuzqGs7s/mM23WRLcGuJne33oSVq86Glq8s572ZCoNd3FoivMo/QFCw9PHb83Ln56KeipM9fdmukREdO9STWFdk3YBhEEfAfM8haTZYMIfDsUTNPDoJqFYZ6OURCbX+YuWT4OdVcs1+0Jt94rGEja5dY0N/HMRuGlMYdoUx8w32xiPyX3cwsYLApxjbgcHlKmGRGDpG3PE1CeM/jUJ8L6JusnfbqjUQI1SWTJET2mbBCt85QmRtNRfDUBhqWitPNc/NTiDT5Fms2f8vyXsJjFlhfKEIGfHWV9TLyuBKuW0js9b1WucSjsHY/dwfzX1RgqBkqIxPZdLrTF0FzWtek0sq3MAsmjK0xrKOCCVbQXOQUy6ERXWoKy5eOgRIBxy2YkJaU=
+  - secure: MB0IxDABOjtKgnkboMBsob1eZQFvk8jlGIQ8zCtKUU1XYYm39Wr8D4fJFhPDgNKXAemHiEg9u9UJais4/3aVS0aGgAWsi+UeZm+uynWT35FR3ImbyWy00e8m6Z+e0tRp8I20lt0Qt9LJ8wKUoesQVhaZP0LyACa9iHNC0A3+ySvaZmkeamKr+9ZmqeVeYPg4sq4JEOQV2U81JrryYfFc3OOFNspBJwcaaMH+isrNFGKH4+48DhCkKMLzz6AScg79VKJpuj53V5wPNcGGUka0SfwMm9Bq+yiJ/Y7ogwXkzsd3fEPFW/KR4AjYjO1nJWUXiFS2z36lK8YBhrU/Rm/3gUS2Ds7m5rvOabuOn23RKPp/nOLufUv6SbyfHWinCEpo4ifLS7cEKqnwfsjN2hzSJ8dveaXMfdlvkbN4jWj+39UjpB+1w7x6OwMxso5CoL0Yi1CRbJQ7l/2nW0tNnQLZJ0775PWCr9S8+2eUrUSJuENQvFWT5kRdL7rwi4L+JC+yqDQHSpl6pmV9R6NKrAvXFkXm5BXfqW3EQofXagpRktq9bW2M6S8UagQlqtQSCLHAkb+6AaUs9E8aTO+xUZFwJAJdPI6EfHMegn/yYOUAZ+fSnNzcOt6yOzYTJxoDCyRELO4kgVfeqnvix3a7JTg4117Ofv9xIOkGlFw5Q1gOtw4=
+script:
+- echo $TRAVIS_COMMIT
+after_success:
+- pwd
+- MESSAGE=$(git log --format=%B -n 1 $TRAVIS_COMMIT)
+- git clone git://${GH_REPO}
+- ls
+- rm -rf ./${REPO}/*
+- ls
+- mv ${FILES} ${REPO}
+- ls ${REPO}/
+- cd ${REPO}
+- git checkout master
+- touch abc
+- git add abc
+- git commit -m "simple test abc"
+- git push "https://${GH_TOKEN}@${GH_REPO}" master
+- git config user.email ${EMAIL}
+- git config user.name "${USER}"
+- git add .
+- git commit -m ${MESSAGE}
+- git push "https://${GH_TOKEN}@${GH_REPO}" master

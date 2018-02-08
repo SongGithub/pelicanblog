@@ -8,21 +8,6 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-FTP_HOST=localhost
-FTP_USER=anonymous
-FTP_TARGET_DIR=/
-
-SSH_HOST=localhost
-SSH_PORT=22
-SSH_USER=root
-SSH_TARGET_DIR=/var/www
-
-S3_BUCKET=my_s3_bucket
-
-CLOUDFILES_USERNAME=my_rackspace_username
-CLOUDFILES_API_KEY=my_rackspace_api_key
-CLOUDFILES_CONTAINER=my_cloudfiles_container
-
 DROPBOX_DIR=~/Dropbox/Public/
 
 DEBUG ?= 0
@@ -95,20 +80,27 @@ dropbox_upload: publish
 ftp_upload: publish
 	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(OUTPUTDIR) $(FTP_TARGET_DIR) ; quit"
 
-s3_upload: publish
-	s3cmd sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) --acl-public --delete-removed
-
-cf_upload: publish
-	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
-
 github: publish
-	ghp-import $(OUTPUTDIR)
 	git push origin gh-pages
 
-my-github: publish
-	# switch git context to songgithub.github.io
+my-github: publish setup_git commit_web_files upload_files
+	@echo "my-github"
 
-	# push
+setup_git:
+	@echo "setup_git"
+	@echo "GH_TOKEN"
+	@echo "$(GH_TOKEN)"
+  	# git config --global user.email "songjin@hotmail.com"
+   #  git config --global user.name "Travis on behalf of Song"
+
+commit_web_files:
+	@echo "commit_web_files"
+	git remote -v
+	git add output
+	git commit -m "a meaningful unique Travis var here"
+
+upload_files:
+	@echo "upload_files"
 	git push origin master
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
+.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github my-github setup_git upload_files
