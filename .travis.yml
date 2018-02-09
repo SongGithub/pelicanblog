@@ -11,21 +11,13 @@ script:
 - pip install pelican markdown
 - make publish
 after_success:
-- pwd
 - MESSAGE=$(git log --format=%B -n 1 $TRAVIS_COMMIT)
+- proj_folder_name=$(basename "$PWD")
+- echo $proj_folder_name
+- cd ..
 - git clone git://${GH_REPO}
-- ls
-- rm -rf ./${REPO}/*
-- ls
-- mv ${FILES} ${REPO}
-- ls ${REPO}/
 - cd ${REPO}
-- git checkout master
-- git push "https://${GH_TOKEN}@${GH_REPO}" master
-- git config user.email ${EMAIL}
-- git config --local user.name "${USER}"
+- cp -rf ../${proj_folder_name}/${FILES} .
 - git add .
-- git status
 - git commit -m "${MESSAGE}"
-- git status
 - git push "https://${GH_TOKEN}@${GH_REPO}" master
