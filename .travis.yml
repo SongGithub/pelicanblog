@@ -1,7 +1,7 @@
 language: python
 env:
   global:
-  - USER="Travis on behalf of songGithub"
+  - USER="SongGithub"
   - EMAIL="songjin@hotmail.com"
   - REPO="songgithub.github.io"
   - FILES="output/*"
