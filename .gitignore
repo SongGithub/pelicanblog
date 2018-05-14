@@ -1,5 +1,10 @@
+# python
 *.pyc
 __pycache__
 
+# pelican
 output/
 publishing/
+
+# other
+srv.pid

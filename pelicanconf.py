@@ -40,7 +40,7 @@ TAG_CLOUD_MAX_ITEMS = 300
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 # Formatting for urls
 
@@ -57,3 +57,12 @@ TAG_SAVE_AS = "tag/{slug}/index.html"
 
 YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
 
+# markDown support
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html5',
+}
