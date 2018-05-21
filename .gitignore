@@ -3,7 +3,7 @@
 __pycache__
 
 # pelican
-output/
+# output/
 publishing/
 
 # other

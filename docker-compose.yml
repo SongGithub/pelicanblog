@@ -1,0 +1,6 @@
+---
+version: '3.0'
+
+services:
+  pelican:
+    image: songgithub/python36-pelican:latest
