@@ -31,7 +31,7 @@ LINKS =  (
 # Social widget
 SOCIAL = (
             ('Github','https://github.com/SongGithub'),
-            ('Linkedin', 'http://au.linkedin.com/in/songjin123'),
+            ('Linkedin', 'http://au.linkedin.com/in/songjinau'),
          )
 
 TAG_CLOUD_STEPS = 3

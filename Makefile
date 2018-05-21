@@ -61,12 +61,12 @@ stopserver:
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
-setup_git:
-	@echo "setup_git"
-	@echo "GH_TOKEN"
-	@echo "$(GH_TOKEN)"
-    git config --global user.email "songjin@hotmail.com"
-    git config --global user.name "Travis on behalf of Song"
+# setup_git:
+# 	@echo "setup_git"
+# 	@echo "GH_TOKEN"
+# 	@echo "$(GH_TOKEN)"
+#     git config --global user.email "songjin@hotmail.com"
+#     git config --global user.name "Travis on behalf of Song"
 
 commit_web_files:
 	@echo "commit_web_files"
