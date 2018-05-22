@@ -3,7 +3,10 @@
 set -ex
 # ensure the output folder exists.
 
-if [ ! -d output ]; then
+if [ -d output ]; then
+  echo "existing, then delete contents and re-create"
+  rm -rf output/*
+else
   mkdir output
 fi
 
