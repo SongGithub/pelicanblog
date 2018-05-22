@@ -63,7 +63,10 @@ setup_git:
 	@echo "setup_git"
 	@echo "GH_TOKEN"
 	@echo "$(GH_TOKEN)"
-	@git config user.email "songjin@hotmail.com"
-	@git config user.name "Travis on behalf of Song"
+	@echo "$(GH_REPO)"
+	@git remote rm origin
+	@git remote add origin $(GH_REPO)
+	@git config user.email $(EMAIL)
+	@git config user.name $(USER)
 
 .PHONY: html help clean regenerate serve devserver publish setup_git
