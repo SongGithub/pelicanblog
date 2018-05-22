@@ -1,4 +1,3 @@
-PY=python
 PELICAN="docker-compose run --rm pelican"
 dcr := docker-compose run --rm
 
@@ -67,4 +66,4 @@ setup_git:
 	@git config user.email "songjin@hotmail.com"
 	@git config user.name "Travis on behalf of Song"
 
-.PHONY: html help clean regenerate serve devserver publish my-github setup_git upload_files
+.PHONY: html help clean regenerate serve devserver publish setup_git
