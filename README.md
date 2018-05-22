@@ -1,5 +1,5 @@
 # Pelican blog - a Song Jin personal blog setup
-[![Build Status](https://travis-ci.org/SongGithub/pelicanblog.svg?branch=master)](https://travis-ci.org/SongGithub/pelicanblog)
+[![Build Status](https://travis-ci.org/SongGithub/songgithub.github.io-src.svg?branch=master)](https://travis-ci.org/SongGithub/songgithub.github.io-src)
 
 
 ## Current Setup
