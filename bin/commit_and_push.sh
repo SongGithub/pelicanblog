@@ -2,8 +2,8 @@
 
 set -x
 
-git_msg=$(date '+%d/%m/%Y %H:%M:%S')
-echo "committed by robot, at ""$git_msg"
+git_msg="committed by robot, at "$(date '+%d/%m/%Y %H:%M:%S')
+echo "$git_msg"
 
 cd output
 git add .
