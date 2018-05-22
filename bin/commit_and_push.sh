@@ -2,16 +2,12 @@
 
 set -ex
 
-commit_push() {
-  msg=$1
-  git add .
-  git commit -m "$msg"
-  git push -u origin master
-}
-
-
 cd output
-commit_push 'committed by git robot'
+git add .
+git commit -m 'committed by git robot'
+git push -u origin master
 
 cd ..
-commit_push 'committed by git robot'
+git add .
+git commit -m 'committed by git robot'
+git push -u origin master

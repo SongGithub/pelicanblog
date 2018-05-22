@@ -4,3 +4,8 @@ version: '3.0'
 services:
   pelican:
     image: songgithub/python36-pelican:latest
+    working_dir: /app
+    volumes:
+      - ".:/app"
+    entrypoint: pelican
+    # entrypoint: ["/bin/bash"]

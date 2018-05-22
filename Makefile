@@ -1,14 +1,12 @@
 PY=python
-PELICAN=pelican
-PELICANOPTS=
+PELICAN="docker-compose run --rm pelican"
+dcr := docker-compose run --rm
 
 BASEDIR=$(CURDIR)
 INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
-
-DROPBOX_DIR=~/Dropbox/Public/
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
@@ -48,9 +46,9 @@ endif
 
 devserver:
 ifdef PORT
-	$(BASEDIR)/develop_server.sh restart $(PORT)
+	$(BASEDIR)/bin/develop_server.sh restart $(PORT)
 else
-	$(BASEDIR)/develop_server.sh restart
+	$(BASEDIR)/bin/develop_server.sh restart
 endif
 
 stopserver:
@@ -59,14 +57,14 @@ stopserver:
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
 publish:
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+	@$(dcr) pelican content -o output -s publishconf.py
 
-# setup_git:
-# 	@echo "setup_git"
-# 	@echo "GH_TOKEN"
-# 	@echo "$(GH_TOKEN)"
-#     git config --global user.email "songjin@hotmail.com"
-#     git config --global user.name "Travis on behalf of Song"
+setup_git:
+	@echo "setup_git"
+	@echo "GH_TOKEN"
+	@echo "$(GH_TOKEN)"
+	@git config --global user.email "songjin@hotmail.com"
+	@git config --global user.name "Travis on behalf of Song"
 
 commit_web_files:
 	@echo "commit_web_files"
@@ -74,8 +72,4 @@ commit_web_files:
 	git add output
 	git commit -m "a meaningful unique Travis var here"
 
-upload_files:
-	@echo "upload_files"
-	git push origin master
-
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github my-github setup_git upload_files
+.PHONY: html help clean regenerate serve devserver publish my-github setup_git upload_files
