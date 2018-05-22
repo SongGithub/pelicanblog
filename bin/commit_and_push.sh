@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 
 set -ex
+# ensure the output folder exists.
+
+if [ ! -d output ]; then
+  mkdir output
+fi
 
 cd output
 git add .

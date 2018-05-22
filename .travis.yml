@@ -10,5 +10,6 @@ env:
 script:
 - docker-compose pull
 - make publish
+- ./bin/commit_and_push.sh
 after_success:
 - echo "all good! "

@@ -57,19 +57,14 @@ stopserver:
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
 publish:
+	@echo "publishing pelican content"
 	@$(dcr) pelican content -o output -s publishconf.py
 
 setup_git:
 	@echo "setup_git"
 	@echo "GH_TOKEN"
 	@echo "$(GH_TOKEN)"
-	@git config --global user.email "songjin@hotmail.com"
-	@git config --global user.name "Travis on behalf of Song"
-
-commit_web_files:
-	@echo "commit_web_files"
-	git remote -v
-	git add output
-	git commit -m "a meaningful unique Travis var here"
+	@git config user.email "songjin@hotmail.com"
+	@git config user.name "Travis on behalf of Song"
 
 .PHONY: html help clean regenerate serve devserver publish my-github setup_git upload_files
