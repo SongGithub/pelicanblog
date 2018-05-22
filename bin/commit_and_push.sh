@@ -1,21 +1,16 @@
 #!/usr/bin/env bash
 
-set -ex
-# ensure the output folder exists.
+set -x
 
-if [ -d output ]; then
-  echo "existing, then delete contents and re-create"
-  rm -rf output/*
-else
-  mkdir output
-fi
+git_msg=$(date '+%d/%m/%Y %H:%M:%S')
+echo "committed by robot, at ""$git_msg"
 
 cd output
 git add .
-git commit -m 'committed by git robot'
+git commit -m "$git_msg"
 git push -u origin master
 
 cd ..
 git add .
-git commit -m 'committed by git robot'
+git commit -m "$git_msg"
 git push -u origin master
