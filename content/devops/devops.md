@@ -1,12 +1,10 @@
-Title: back with CICD
-Date: 2018-5-22 16:00
+Title: 1 yr anniversary with Kubernetes
+Date: 2018-5-22 16:01
 Category: Devops
 Tags: devops
 Slug: 1-yr-k8s
 Authors: Song.Jin
 Summary: 1 yr anniversary with k8s
-
-# 1 yr anniversary with Kubernetes
 
 I joined a company that build its platform with Kubernets last year this time.
 

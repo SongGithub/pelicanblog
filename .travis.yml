@@ -11,11 +11,9 @@ env:
   - GH_TARGET_REPO="https://${GH_TOKEN}@github.com/${GH_USER}/${TARGET_REPO}.git"
 
 before_script:
-- echo ${GH_REPO}
 - docker-compose pull
 
 script:
-- make publish
 - bin/commit_and_push.sh ${GH_REPO} ${GH_TARGET_REPO}
 
 after_success:

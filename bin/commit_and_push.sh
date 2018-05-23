@@ -7,14 +7,11 @@ echo "commit msg= ""$git_msg"
 GH_REPO=$1
 GH_TARGET_REPO=$2
 
-git_ops() {
-  git checkout master
-  git pull -r origin master
-  git status
+git_ops_submodule() {
+  # git pull -r origin master
   git add .
-  git status
   git commit -m "$git_msg"
-  git push origin master
+  git push origin master --force-with-lease
 }
 
 reset_origin() {
@@ -22,11 +19,16 @@ reset_origin() {
   git remote set-url origin "$GH_REPO"
 }
 
-chmod -R g+w output
 cd output
+git checkout master
+
+cd ..
+make publish
+cd output
+
 reset_origin "$GH_TARGET_REPO"
-git submodule update --remote
-git_ops
+# git submodule update --remote
+git_ops_submodule
 
 # cd ..
 # reset_origin "$GH_REPO"
