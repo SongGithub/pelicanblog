@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 import os
 
 AUTHOR = u'Song Jin the local machine'
-SITENAME = u"Song's blog- on Local machine"
+SITENAME = u"Song's blog - on Local machine"
 
 SITEURL = os.path.dirname(os.path.dirname(__file__))
 
@@ -58,11 +58,14 @@ TAG_SAVE_AS = "tag/{slug}/index.html"
 YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
 
 # markDown support
-MARKDOWN = {
-    'extension_configs': {
-        'markdown.extensions.codehilite': {'css_class': 'highlight'},
-        'markdown.extensions.extra': {},
-        'markdown.extensions.meta': {},
-    },
-    'output_format': 'html5',
-}
+# MARKDOWN = {
+#     'extension_configs': {
+#         'markdown.extensions.codehilite': {'css_class': 'highlight'},
+#         'markdown.extensions.extra': {},
+#         'markdown.extensions.meta': {},
+#     },
+#     'output_format': 'html5',
+# }
+
+DISPLAY_PAGES_ON_MENU = True
+USE_FOLDER_AS_CATEGORY = True
