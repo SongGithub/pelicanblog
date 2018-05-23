@@ -10,7 +10,9 @@ git_ops() {
   git checkout master
   git add .
   git commit -m "$git_msg"
-  # git pull -r origin master
+  git status
+  chmod -R 755 .
+  git pull -r origin master
   git push origin master
 }
 
