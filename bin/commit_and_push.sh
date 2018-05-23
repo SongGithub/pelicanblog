@@ -14,6 +14,8 @@ git_ops_submodule() {
 
 reset_origin() {
   GH_REPO=$1
+  # default one is the one without auth token.
+  # so we have to reset the origin url with the one that has auth-token embedded
   git remote set-url origin "$GH_REPO"
 }
 

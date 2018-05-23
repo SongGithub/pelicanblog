@@ -5,9 +5,7 @@ env:
   - GH_USER="SongGithub"
   # Encrypted github personal ac@ess token GH_TOKEN here
   - secure: CpEYdCX126DubLz9Tv4gLNGMYoQt9Ze1fCmWvBYzqf+sF8gcL4Snf392rfH5VfV1EFjY445PbaAzSVAYV/DnXUjDiNoQJ5MwtcvMu+5B0CQIn11bK0vgnNeLVE+KQqMLBQG/8mPsEHYOyBZk/ZcO6iujaQ60CPPi6seRZXxuNZ6ufGmsknLhwW9+KHX71Q4aCUktywUpeS6Oiwt9QhunS3UWDqVOQFHvgHDiffhbg0Zx3tZ3gztwc7A61pi7Tu0WvjTOVGHVv87txypw85LQSXE/jlTwGP/bKKdRkWFXuzqGs7s/mM23WRLcGuJne33oSVq86Glq8s572ZCoNd3FoivMo/QFCw9PHb83Ln56KeipM9fdmukREdO9STWFdk3YBhEEfAfM8haTZYMIfDsUTNPDoJqFYZ6OURCbX+YuWT4OdVcs1+0Jt94rGEja5dY0N/HMRuGlMYdoUx8w32xiPyX3cwsYLApxjbgcHlKmGRGDpG3PE1CeM/jUJ8L6JusnfbqjUQI1SWTJET2mbBCt85QmRtNRfDUBhqWitPNc/NTiDT5Fms2f8vyXsJjFlhfKEIGfHWV9TLyuBKuW0js9b1WucSjsHY/dwfzX1RgqBkqIxPZdLrTF0FzWtek0sq3MAsmjK0xrKOCCVbQXOQUy6ERXWoKy5eOgRIBxy2YkJaU=
-  # - REPO="songgithub.github.io-src"
   - TARGET_REPO="songgithub.github.io"
-  # - GH_REPO="https://${GH_TOKEN}@github.com/${GH_USER}/${REPO}.git"
   - GH_TARGET_REPO="https://${GH_TOKEN}@github.com/${GH_USER}/${TARGET_REPO}.git"
 
 before_script:
@@ -17,4 +15,4 @@ script:
 - bin/commit_and_push.sh ${GH_TARGET_REPO}
 
 after_success:
-- echo "all good! "
+- echo "all done!"
