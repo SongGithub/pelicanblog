@@ -7,10 +7,11 @@ echo "commit msg= ""$git_msg"
 GH_REPO=$1
 
 git_ops() {
+  git checkout master
+  git pull -r origin
   git add .
   git commit -m "$git_msg"
-  git pull -r
-  git push -u origin master
+  git push -f origin master
 }
 
 reset_origin() {
@@ -19,10 +20,11 @@ reset_origin() {
   git remote add origin "$GH_REPO"
 }
 
+chmod -R g+w output
 cd output
 reset_origin "$GH_REPO"
 git_ops
 
-cd ..
-reset_origin "$GH_REPO"
-git_ops
+# cd ..
+# reset_origin "$GH_REPO"
+# git_ops
