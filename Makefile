@@ -66,10 +66,5 @@ setup_git:
 	@echo "recreating origin"
 	@git remote rm origin
 	@git remote add origin $(GH_REPO)
-	@git version
-	@echo "configuring local repo git settings"
-	@git config -l
-	# @git config --local user.email $(EMAIL)
-	# @git config --local user.name $(USER)
 
 .PHONY: html help clean regenerate serve devserver publish setup_git

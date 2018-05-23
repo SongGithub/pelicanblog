@@ -2,8 +2,8 @@
 
 set -x
 
-git_msg="committed by robot, at "$(date '+%d/%m/%Y %H:%M:%S')
-echo "$git_msg"
+git_msg="committed by robot, at Melbourne time ""$(TZ=UTC-10 date '+%d/%m/%Y %H:%M:%S')"
+echo "commit msg= ""$git_msg"
 
 cd output
 git add .

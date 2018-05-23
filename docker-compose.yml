@@ -9,3 +9,9 @@ services:
       - ".:/app"
     entrypoint: pelican
     # entrypoint: ["/bin/bash"]
+  bash-git:
+    image: ellerbrock/alpine-bash-git:latest
+    # working_dir: /app
+    # volumes:
+    #   - ".:/app"
+    entrypoint: /bin/bash

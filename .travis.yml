@@ -1,6 +1,6 @@
 env:
   global:
-  - USER="Travis on behalf of SongGithub"
+  - USER="TravisForSongGithub"
   - EMAIL="songjin@hotmail.com"
   - GH_USER="SongGithub"
   # Encrypted github personal ac@ess token GH_TOKEN here
