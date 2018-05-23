@@ -8,11 +8,12 @@ GH_REPO=$1
 
 git_ops() {
   git checkout master
+  git status
   git add .
+  git status
   git commit -m "$git_msg"
   git status
-  chmod -R 755 .
-  git pull -r origin master
+  # git pull -r origin master
   git push origin master
 }
 
@@ -24,6 +25,7 @@ reset_origin() {
 chmod -R g+w output
 cd output
 reset_origin "$GH_REPO"
+git submodule update --remote
 git_ops
 
 # cd ..
