@@ -6,14 +6,13 @@ Authors: Song.Jin
 Summary: 1 yr anniversary with k8s
 
 I joined a company that build its platform with Kubernets last year this time.
+I have since amazed how much this technologies can help Developers and the company!
 
-
-## I have since amazed how much this technologies can help Developers and the company!
-
+## Its benefits:
 
 ### It saves time from developers to deploy
 
-Developers do not need to worry about infrasture running their workload, as well
+Developers do not need to worry about infrastructure running their workload, as well
 as alerting and monitoring. All they need to know now, is how to write simple
 Kubernetes config yaml files with help from our team's demo apps.
 

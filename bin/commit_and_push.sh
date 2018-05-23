@@ -8,7 +8,7 @@ GH_TARGET_REPO=$1
 git_ops_submodule() {
   git add .
   git_msg="committed by robot, at Melbourne time ""$(TZ=UTC-10 date '+%d/%m/%Y %H:%M:%S')"
-  git commit --quiet -m "$git_msg"
+  git commit -m "$git_msg"
   git push origin master --force-with-lease
 }
 
