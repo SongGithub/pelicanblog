@@ -1,8 +1,10 @@
 Title: About Me
 Date: 2014-03-03 10:20
 Tags: site-docs
+Category: foo
 Slug: about-me
 Authors: Song.Jin
+Summary: foo bar
 
 ## Welcome to my blog!
 

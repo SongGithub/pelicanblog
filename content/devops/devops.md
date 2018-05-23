@@ -1,6 +1,5 @@
 Title: 1 yr anniversary with Kubernetes
 Date: 2018-5-22 16:01
-Category: Devops
 Tags: devops
 Slug: 1-yr-k8s
 Authors: Song.Jin
