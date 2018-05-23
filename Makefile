@@ -61,12 +61,15 @@ publish:
 
 setup_git:
 	@echo "setup_git"
-	@echo "GH_TOKEN"
-	@echo "$(GH_TOKEN)"
-	@echo "$(GH_REPO)"
+	@echo "GH_TOKEN= ""$(GH_TOKEN)"
+	@echo "GH_REPO=  ""$(GH_REPO)"
+	@echo "recreating origin"
 	@git remote rm origin
 	@git remote add origin $(GH_REPO)
-	@git config user.email $(EMAIL)
-	@git config user.name $(USER)
+	@git version
+	@echo "configuring local repo git settings"
+	@git config -l
+	# @git config --local user.email $(EMAIL)
+	# @git config --local user.name $(USER)
 
 .PHONY: html help clean regenerate serve devserver publish setup_git
