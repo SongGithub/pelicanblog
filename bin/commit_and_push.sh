@@ -5,6 +5,7 @@ set -x
 git_msg="committed by robot, at Melbourne time ""$(TZ=UTC-10 date '+%d/%m/%Y %H:%M:%S')"
 echo "commit msg= ""$git_msg"
 GH_REPO=$1
+GH_TARGET_REPO=$2
 
 git_ops() {
   git checkout master
@@ -12,7 +13,6 @@ git_ops() {
   git add .
   git status
   git commit -m "$git_msg"
-  git status
   # git pull -r origin master
   git push origin master
 }
@@ -24,7 +24,7 @@ reset_origin() {
 
 chmod -R g+w output
 cd output
-reset_origin "$GH_REPO"
+reset_origin "$GH_TARGET_REPO"
 git submodule update --remote
 git_ops
 
