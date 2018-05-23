@@ -2,15 +2,10 @@ PELICAN="docker-compose run --rm pelican"
 dcr := docker-compose run --rm
 
 BASEDIR=$(CURDIR)
-INPUTDIR=$(BASEDIR)/content
-OUTPUTDIR=$(BASEDIR)/output
-CONFFILE=$(BASEDIR)/pelicanconf.py
-PUBLISHCONF=$(BASEDIR)/publishconf.py
-
-DEBUG ?= 0
-ifeq ($(DEBUG), 1)
-	PELICANOPTS += -D
-endif
+INPUTDIR=content
+OUTPUTDIR=output
+CONFFILE=pelicanconf.py
+PUBLISHCONF=publishconf.py
 
 help:
 	@echo 'Makefile for a pelican Web site                                        '
@@ -28,19 +23,19 @@ help:
 	@echo '                                                                       '
 
 html:
-	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	@$(dcr) pelican-py pelican $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 
 regenerate:
-	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
+	@$(dcr) pelican-py pelican -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 serve:
 ifdef PORT
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server $(PORT)
+	cd $(OUTPUTDIR) && $(dcr) -p $(PORT):$(PORT) pelican-server python -m pelican.server $(PORT)
 else
-	cd $(OUTPUTDIR) && $(PY) -m pelican.server
+	cd $(OUTPUTDIR) && $(dcr) -p 8000:8000 pelican-server python -m pelican.server 8000
 endif
 
 devserver:
@@ -57,6 +52,6 @@ stopserver:
 
 publish:
 	@echo "publishing pelican content"
-	@$(dcr) pelican content -o output -s publishconf.py
+	@$(dcr) pelican-py pelican content -o output -s publishconf.py
 
 .PHONY: html help clean regenerate serve devserver publish setup_git

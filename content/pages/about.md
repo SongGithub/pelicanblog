@@ -1,7 +1,7 @@
 Title: About Me
 Date: 2014-03-03 10:20
-Tags: devops
-Slug: 1-yr-k8s
+Tags: site-docs
+Slug: about-me
 Authors: Song.Jin
 
 ## Welcome to my blog!
