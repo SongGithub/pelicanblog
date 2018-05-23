@@ -27,15 +27,7 @@ cd output
 git checkout master
 # get rid of historical rubbish that are not relevant, but preserve CNAME file
 # that is created automatically by Github when you configure it with your domain
-
-if [ -f CNAME ]; then
-  # remove all files but CNAME
-  find . ! -name 'CNAME' -type f -exec rm -f {} +
-  # remove all folders except .git
-  find . -path ./.git -prune -o -exec rm -rf {} \; 2> /dev/null
-else
-  rm -rf *
-fi
+rm -rf *
 
 cd ..
 make publish
