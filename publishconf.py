@@ -6,7 +6,7 @@ import os
 AUTHOR = u'Song Jin'
 SITENAME = u"Song's blog on the Github 2018"
 
-SITEURL = 'https://songgithub.github.io'
+SITEURL = 'https://blog.midu.com.au'
 
 THEME = "themes/bootstrap"
 
@@ -55,3 +55,6 @@ TAG_CLOUD_MAX_ITEMS = 300
 GOOGLE_ANALYTICS = 'UA-48669344-1'
 
 DEFAULT_CATEGORY="misc"
+
+DISPLAY_PAGES_ON_MENU = True
+USE_FOLDER_AS_CATEGORY = True
