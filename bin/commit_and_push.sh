@@ -25,8 +25,15 @@ cd output
 # default branch is none but a commit. So have to checkout master branch before
 # writting files into it via `make publish`. I know it looks hacky now.
 git checkout master
-# get rid of historical rubbish that are not relevant
-rm -rf *
+# get rid of historical rubbish that are not relevant, but preserve CNAME file
+# that is created automatically by Github when you configure it with your domain
+if [ -f CNAME ]; then
+  find . ! -name 'CNAME' -type f -exec rm -f {} +
+  rm -rf ./*/
+else
+  rm -rf *
+fi
+
 cd ..
 make publish
 cd output
