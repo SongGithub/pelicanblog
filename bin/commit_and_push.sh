@@ -28,16 +28,18 @@ git checkout master
 # get rid of historical rubbish that are not relevant, but preserve CNAME file
 # that is created automatically by Github when you configure it with your domain
 
-# if [ -f CNAME ]; then
-#   find . ! -name 'CNAME' -type f -exec rm -f {} +
-#   rm -rf ./*/
-# else
-#   rm -rf *
-# fi
+if [ -f CNAME ]; then
+  find . ! -name 'CNAME' -type f -exec rm -f {} +
+  rm -rf ./*/
+else
+  rm -rf *
+fi
 
 cd ..
 make publish
-cp CNAME output/
+if [ -f CNAME ]; then
+  cp CNAME output/
+fi
 cd output
 if [ "$CI" == "true" ]; then
   reset_origin "$GH_TARGET_REPO"
