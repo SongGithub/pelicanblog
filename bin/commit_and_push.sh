@@ -8,10 +8,10 @@ GH_REPO=$1
 
 git_ops() {
   git checkout master
-  git pull -r origin
   git add .
   git commit -m "$git_msg"
-  git push -f origin master
+  git pull -r origin master
+  git push origin master
 }
 
 reset_origin() {
@@ -25,6 +25,6 @@ cd output
 reset_origin "$GH_REPO"
 git_ops
 
-# cd ..
-# reset_origin "$GH_REPO"
-# git_ops
+cd ..
+reset_origin "$GH_REPO"
+git_ops
