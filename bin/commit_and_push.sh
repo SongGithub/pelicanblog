@@ -4,6 +4,7 @@ set -x
 
 git_msg="committed by robot, at Melbourne time ""$(TZ=UTC-10 date '+%d/%m/%Y %H:%M:%S')"
 echo "commit msg= ""$git_msg"
+GH_REPO=$1
 
 git_ops() {
   git add .
@@ -13,14 +14,15 @@ git_ops() {
 }
 
 reset_origin() {
+  GH_REPO=$1
   git remote rm origin
-  git remote add origin $(GH_REPO)
+  git remote add origin "$GH_REPO"
 }
 
 cd output
-reset_origin
+reset_origin "$GH_REPO"
 git_ops
 
 cd ..
-reset_origin
+reset_origin "$GH_REPO"
 git_ops

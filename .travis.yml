@@ -15,7 +15,7 @@ before_script:
 
 script:
 - make publish
-- bin/commit_and_push.sh
+- bin/commit_and_push.sh ${GH_REPO}
 
 after_success:
 - echo "all good! "
