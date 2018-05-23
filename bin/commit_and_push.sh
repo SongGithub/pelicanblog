@@ -9,11 +9,11 @@ GH_TARGET_REPO=$2
 
 git_ops() {
   git checkout master
+  git pull -r origin master
   git status
   git add .
   git status
   git commit -m "$git_msg"
-  # git pull -r origin master
   git push origin master
 }
 
