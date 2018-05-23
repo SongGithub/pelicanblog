@@ -2,13 +2,13 @@
 
 set -x
 
-git_msg="committed by robot, at Melbourne time ""$(TZ=UTC-10 date '+%d/%m/%Y %H:%M:%S')"
-echo "commit msg= ""$git_msg"
 GH_TARGET_REPO=$1
+
 
 git_ops_submodule() {
   git add .
-  git commit -m "$git_msg"
+  git_msg="committed by robot, at Melbourne time ""$(TZ=UTC-10 date '+%d/%m/%Y %H:%M:%S')"
+  git commit --quiet -m "$git_msg"
   git push origin master --force-with-lease
 }
 
@@ -18,8 +18,12 @@ reset_origin() {
 }
 
 
+# main
 cd output
+# default branch is none but a commit. So have to checkout master branch before
+# writting files into it via `make publish`. I know it looks hacky now.
 git checkout master
+# get rid of historical rubbish that are not relevant
 rm -rf *
 cd ..
 make publish
