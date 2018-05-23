@@ -59,12 +59,4 @@ publish:
 	@echo "publishing pelican content"
 	@$(dcr) pelican content -o output -s publishconf.py
 
-setup_git:
-	@echo "setup_git"
-	@echo "GH_TOKEN= ""$(GH_TOKEN)"
-	@echo "GH_REPO=  ""$(GH_REPO)"
-	@echo "recreating origin"
-	@git remote rm origin
-	@git remote add origin $(GH_REPO)
-
 .PHONY: html help clean regenerate serve devserver publish setup_git

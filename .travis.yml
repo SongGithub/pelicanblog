@@ -11,10 +11,9 @@ env:
 
 before_script:
 - echo ${GH_REPO}
-- make setup_git
+- docker-compose pull
 
 script:
-- docker-compose pull
 - make publish
 - bin/commit_and_push.sh
 
