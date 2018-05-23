@@ -10,14 +10,13 @@ git_ops() {
   git checkout master
   git add .
   git commit -m "$git_msg"
-  git pull -r origin master
+  # git pull -r origin master
   git push origin master
 }
 
 reset_origin() {
   GH_REPO=$1
-  git remote rm origin
-  git remote add origin "$GH_REPO"
+  git remote set-url origin "$GH_REPO"
 }
 
 chmod -R g+w output
@@ -25,6 +24,6 @@ cd output
 reset_origin "$GH_REPO"
 git_ops
 
-cd ..
-reset_origin "$GH_REPO"
-git_ops
+# cd ..
+# reset_origin "$GH_REPO"
+# git_ops
