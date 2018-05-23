@@ -17,11 +17,14 @@ reset_origin() {
   git remote set-url origin "$GH_REPO"
 }
 
+
 cd output
 git checkout master
+rm -rf *
 cd ..
 make publish
 cd output
-
-reset_origin "$GH_TARGET_REPO"
+if [ "$CI" == "true" ]; then
+  reset_origin "$GH_TARGET_REPO"
+fi
 git_ops_submodule
