@@ -27,7 +27,7 @@ Kubernetes config yaml files with help from our team's demo apps.
 
 ## I have improved myself since then
 
-There are people skills, tech skills, as well as tabel-tennis skills gained in
+There are people skills, tech skills, as well as table tennis skills gained in
  a large enterprise in Australia.
 
 From technical perspective, I try to reduce my gap with some top-of-range
