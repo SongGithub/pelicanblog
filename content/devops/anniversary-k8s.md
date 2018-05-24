@@ -5,23 +5,31 @@ Slug: 1-yr-k8s
 Authors: Song.Jin
 Summary: 1 yr anniversary with k8s
 
-I joined a company that build its platform with Kubernets last year this time.
-I have since amazed how much this technologies can help Developers and the company!
+I joined a company that builds its platform with Kubernetes last year this time.
+I have since amazed how much this technology can help Developers and the Company!
 
 ## Its benefits:
 
 ### It saves time from developers to deploy
 
-Developers do not need to worry about infrastructure running their workload, as well
+Developers do not need to worry about infrastructure running their workloads, as well
 as alerting and monitoring. All they need to know now, is how to write simple
-Kubernetes config yaml files with help from our team's demo apps.
+Kubernetes config yaml files with help from our team.
 
 
-### It improves company development mentality
+### It improves software development mentality
 
 - Immutable infrastruture
 - Immutable workload.
 - Docker images as artifacts
+
+Before, developers liked to maintain a long running machine which is special. Time
+spent on manually configure them was an investment. So when something fails, the
+person on call need to jump into the Server, spending time to resolve the problem.
+
+Now, they don't need to and they can't do that anymore with Dockerised app running
+on Kubernetes cluster.
+
 
 ## I have improved myself since then
 
