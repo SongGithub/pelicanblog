@@ -4,7 +4,6 @@ set -ex
 
 GH_TARGET_REPO=$1
 
-
 git_ops_submodule() {
   git add .
   git_msg="committed by robot, at Melbourne time ""$(TZ=UTC-10 date '+%d/%m/%Y %H:%M:%S')"
