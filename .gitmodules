@@ -1,5 +1,0 @@
-[submodule "songgithub.github.io"]
-    url = https://github.com/SongGithub/songgithub.github.io.git
-[submodule "output"]
-	url = https://github.com/SongGithub/songgithub.github.io.git
-	path = output
