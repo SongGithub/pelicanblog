@@ -8,3 +8,5 @@ from pelicanconf import *
 
 SITENAME = u"Song's blog on the Github 2018"
 SITEURL = 'https://blog.midu.com.au'
+RELATIVE_URLS = False
+print (SITEURL)

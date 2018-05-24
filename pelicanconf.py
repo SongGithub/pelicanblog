@@ -6,16 +6,14 @@ AUTHOR = u'Song Jin'
 SITENAME = u"Song's blog - on local machine"
 
 SITEURL = os.path.dirname(os.path.dirname(__file__))
-
-THEME = "themes/bootstrap"
+THEME = "themes/gum"
 
 TIMEZONE = 'Australia/Melbourne'
 DEFAULT_DATE = 'fs'
 
 DEFAULT_LANG = u'en'
 
-THEME_STATIC_DIR = ('themes')
-os.path.join(SITEURL, 'templates'),
+THEME_STATIC_DIR = ('theme')
 RELATIVE_URLS = True
 
 # 'project links'
@@ -33,9 +31,6 @@ TAG_CLOUD_STEPS = 3
 TAG_CLOUD_MAX_ITEMS = 300
 
 DEFAULT_PAGINATION = 10
-
-# Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
 
 # I am the only one writing to it, so no need for such a filter
 AUTHOR_URL = ''
