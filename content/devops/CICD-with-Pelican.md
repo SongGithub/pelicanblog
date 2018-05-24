@@ -1,6 +1,6 @@
 Title: CICD with PelicanBlog
-Date: 2018-5-23 22:01
 Tags: devops
+Date: 2018-5-23
 Slug: cicd-pelicanblog
 Authors: Song.Jin
 Summary: how I build this blog
