@@ -6,7 +6,7 @@ AUTHOR = u'Song Jin'
 SITENAME = u"Song's blog - on local machine"
 
 SITEURL = os.path.dirname(os.path.dirname(__file__))
-THEME = "themes/gum"
+THEME = "themes/voidy-bootstrap"
 
 TIMEZONE = 'Australia/Melbourne'
 DEFAULT_DATE = 'fs'
