@@ -2,26 +2,21 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 import os
-
-AUTHOR = u'Song Jin the local machine'
-SITENAME = u"Song's blog - on Local machine"
+AUTHOR = u'Song Jin'
+SITENAME = u"Song's blog - on local machine"
 
 SITEURL = os.path.dirname(os.path.dirname(__file__))
 
 THEME = "themes/bootstrap"
 
-THEME_STATIC_DIR = ('themes')
-os.path.join(SITEURL, 'templates'),
-RELATIVE_URLS = True
-
 TIMEZONE = 'Australia/Melbourne'
+DEFAULT_DATE = 'fs'
 
 DEFAULT_LANG = u'en'
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
+THEME_STATIC_DIR = ('themes')
+os.path.join(SITEURL, 'templates'),
+RELATIVE_URLS = True
 
 # 'project links'
 LINKS =  (
@@ -42,10 +37,13 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-# Formatting for urls
+# I am the only one writing to it, so no need for such a filter
+AUTHOR_URL = ''
+AUTHOR_SAVE_AS = ''
 
-ARTICLE_URL = "posts/{date:%Y}/{date:%m}/{slug}/"
-ARTICLE_SAVE_AS = "posts/{date:%Y}/{date:%m}/{slug}/index.html"
+# Formatting for urls
+ARTICLE_URL = "posts/{date:%Y-%m}/{slug}/"
+ARTICLE_SAVE_AS = "posts/{date:%Y-%m}/{slug}/index.html"
 
 CATEGORY_URL = "category/{slug}"
 CATEGORY_SAVE_AS = "category/{slug}/index.html"
@@ -54,18 +52,10 @@ TAG_URL = "tag/{slug}/"
 TAG_SAVE_AS = "tag/{slug}/index.html"
 
 # Generate yearly archive
-
 YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
 
-# markDown support
-# MARKDOWN = {
-#     'extension_configs': {
-#         'markdown.extensions.codehilite': {'css_class': 'highlight'},
-#         'markdown.extensions.extra': {},
-#         'markdown.extensions.meta': {},
-#     },
-#     'output_format': 'html5',
-# }
-
 DISPLAY_PAGES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = True
 USE_FOLDER_AS_CATEGORY = True
+DELETE_OUTPUT_DIRECTORY = True
+SUMMARY_MAX_LENGTH = 40

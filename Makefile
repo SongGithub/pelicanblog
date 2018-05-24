@@ -52,6 +52,6 @@ stopserver:
 
 publish:
 	@echo "publishing pelican content"
-	@$(dcr) pelican-py pelican content -o output -s publishconf.py
+	@$(dcr) pelican-py pelican $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF)
 
 .PHONY: html help clean regenerate serve devserver publish setup_git
