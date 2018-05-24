@@ -9,7 +9,8 @@ git_ops_submodule() {
   git add .
   git_msg="committed by robot, at Melbourne time ""$(TZ=UTC-10 date '+%d/%m/%Y %H:%M:%S')"
   git commit -m "$git_msg"
-  git push origin master --force-with-lease
+  # git push origin master --force-with-lease
+  git push origin master -f
 }
 
 reset_origin() {
@@ -20,20 +21,35 @@ reset_origin() {
 }
 
 
-# main
-cd output
-# default branch is none but a commit. So have to checkout master branch before
-# writting files into it via `make publish`. I know it looks hacky now.
-git checkout master
+# # main
+# cd output
+# # default branch is none but a commit. So have to checkout master branch before
+# # writting files into it via `make publish`. I know it looks hacky now.
+# git checkout master
 
-cd ..
+# cd ..
+# make publish
+# # CNAME file that is required by Github when you configure it with your domain
+# if [ -f CNAME ]; then
+#   cp CNAME output/
+# fi
+# cd output
+# if [ "$CI" == "true" ]; then
+#   reset_origin "$GH_TARGET_REPO"
+# fi
+# git_ops_submodule
+
+#
+mkdir -p output
 make publish
 # CNAME file that is required by Github when you configure it with your domain
 if [ -f CNAME ]; then
   cp CNAME output/
 fi
-cd output
-if [ "$CI" == "true" ]; then
-  reset_origin "$GH_TARGET_REPO"
-fi
+cp -f favicon.ico output/
+mv output ../
+cd ../output
+git init
+git remote add origin "$GH_TARGET_REPO"
 git_ops_submodule
+
