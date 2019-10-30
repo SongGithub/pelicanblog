@@ -43,9 +43,11 @@ echo 'export no_proxy=[list-of-internal-domains]' >> /etc/sysconfig/docker
 
 I feel it is nice to share traps I fell into, so that you wouldn't experience
 the same pain I have been through.
+
 - no_proxy should contain company internal domains, and no more. Those domains
 that are behind company firewall should be here, but anything else should go
 through the forwardproxy.
+
 - It is good to align your tools with what are popular on the market. If I used
 any AMIs that contains *systemd*, I could have copy&paste solution from the first
 Google search result for this error message. The AMI I used is Amazon 1, which
